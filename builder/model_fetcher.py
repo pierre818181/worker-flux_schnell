@@ -29,7 +29,7 @@ def get_diffusion_pipelines():
     Fetches the Stable Diffusion XL pipelines from the HuggingFace model hub.
     '''
     common_args = {
-        "torch_dtype": torch.float8,
+        "torch_dtype": torch.float16,
         "use_safetensors": True
     }
 
