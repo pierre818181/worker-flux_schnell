@@ -44,4 +44,4 @@ RUN rm /model_fetcher.py
 # Add src files (Worker Template)
 ADD src .
 
-CMD [ "python", "-u", "/rp_handler.py" ]
+CMD [ "python", "-u", "/rp_handler.py", "--rp_log_level DEBUG" ]

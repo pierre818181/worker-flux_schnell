@@ -15,10 +15,13 @@ from diffusers import (
 #     StableDiffusionSafetyChecker,
 # )
 
-
+torch.backends.cuda.matmul.allow_tf32 = True
 MODEL_ID = "black-forest-labs/FLUX.1-schnell"
 MODEL_CACHE = "diffusers-cache"
-
+common_args = {
+            "torch_dtype": torch.float8,
+            "use_safetensors": True
+}
 
 class Predictor:
     def __init__(self):
@@ -27,10 +30,7 @@ class Predictor:
     def setup(self):
         """Load the model into memory to make running multiple predictions efficient"""
         print("Loading pipeline...")
-        common_args = {
-            "torch_dtype": torch.bfloat16,
-            "use_safetensors": True
-        }
+
         self.pipe = DiffusionPipeline.from_pretrained(
             MODEL_ID,
             # safety_checker=safety_checker,
