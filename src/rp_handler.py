@@ -34,8 +34,6 @@ def run(job):
         [job_input.get('init_image', None), job_input.get('mask', None)]
     )  # pylint: disable=unbalanced-tuple-unpacking
 
-    MODEL.NSFW = job_input.get('nsfw', True)
-
     if validated_input['seed'] is None:
         validated_input['seed'] = int.from_bytes(os.urandom(2), "big")
 
