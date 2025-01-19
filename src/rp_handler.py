@@ -41,14 +41,11 @@ def run(job):
 
     img_paths = MODEL.predict(
         prompt=validated_input["prompt"],
-        negative_prompt=validated_input["negative_prompt"],
         width=validated_input['width'],
         height=validated_input['height'],
-        prompt_strength=validated_input['prompt_strength'],
         num_outputs=validated_input['num_outputs'],
         num_inference_steps=validated_input['num_inference_steps'],
         guidance_scale=validated_input['guidance_scale'],
-        scheduler=validated_input['scheduler'],
         seed=validated_input['seed']
     )
 

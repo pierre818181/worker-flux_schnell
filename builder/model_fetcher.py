@@ -7,7 +7,7 @@ Downloads the model from the URL passed in.
 import torch
 from diffusers import DiffusionPipeline
 
-
+MODEL_CACHE = "diffusers-cache"
 def fetch_pretrained_model(model_class, model_name, **kwargs):
     '''
     Fetches a pretrained model from the HuggingFace model hub.
@@ -15,7 +15,7 @@ def fetch_pretrained_model(model_class, model_name, **kwargs):
     max_retries = 3
     for attempt in range(max_retries):
         try:
-            return model_class.from_pretrained(model_name, **kwargs)
+            return model_class.from_pretrained(model_name, cache_dir=MODEL_CACHE, **kwargs)
         except OSError as err:
             if attempt < max_retries - 1:
                 print(
