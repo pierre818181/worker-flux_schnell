@@ -7,6 +7,8 @@ runpod
 diffusers
 torch
 ftfy
+sentencepiece
+protobuf
 scipy
 transformers
 accelerate
