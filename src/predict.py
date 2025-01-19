@@ -29,7 +29,6 @@ class Predictor:
         print("Loading pipeline...")
         common_args = {
             "torch_dtype": torch.bfloat16,
-            "variant": "fp16",
             "use_safetensors": True
         }
         self.pipe = DiffusionPipeline.from_pretrained(

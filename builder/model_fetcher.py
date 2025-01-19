@@ -30,7 +30,6 @@ def get_diffusion_pipelines():
     '''
     common_args = {
         "torch_dtype": torch.bfloat16,
-        "variant": "fp16",
         "use_safetensors": True
     }
 
