@@ -5,6 +5,7 @@
 
 ### Set Up:
 * Create Serverless Endpoint
+
 Well, for me i can use github repo mode. but not sure if others can.
 ![img_3.png](img_3.png)
 if not possible to use this, then you'll need to build, upload the docker image to a registry. then create template 
