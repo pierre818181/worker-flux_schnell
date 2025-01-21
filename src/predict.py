@@ -19,7 +19,6 @@ torch.backends.cuda.matmul.allow_tf32 = True
 MODEL_ID = "black-forest-labs/FLUX.1-schnell"
 MODEL_CACHE = "diffusers-cache"
 common_args = {
-            "torch_dtype": torch.float16,
             "use_safetensors": True
 }
 
@@ -41,7 +40,6 @@ class Predictor:
 
         self.pipe.vae.enable_slicing()
         self.pipe.vae.enable_tiling()
-        self.pipe.enable_xformers_memory_efficient_attention()
 
     @torch.inference_mode()
     def predict(self, prompt, width, height, num_outputs, num_inference_steps, guidance_scale, seed):
