@@ -19,6 +19,7 @@ torch.backends.cuda.matmul.allow_tf32 = True
 MODEL_ID = "black-forest-labs/FLUX.1-schnell"
 MODEL_CACHE = "diffusers-cache"
 common_args = {
+            "torch_dtype": torch.bfloat16,
             "use_safetensors": True
 }
 
