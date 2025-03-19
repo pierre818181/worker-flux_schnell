@@ -3,6 +3,8 @@
 # Flux worker
 </div>
 
+
+[![RunPod](https://api.runpod.io/badge/UnSparkAI/worker-flux_schnell)](https://www.runpod.io/console/hub/UnSparkAI/worker-flux_schnell)
 ## **Inputs Guide:**
 > [!IMPORTANT]
 > For now, you must use the whole inputs, complete without anything missing
