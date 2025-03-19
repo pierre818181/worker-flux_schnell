@@ -7,6 +7,15 @@
   "config": {
     "runsOn": "GPU",
     "containerDiskInGb": 19,
+    "presets": [
+      {
+        "name": "Preset 1",
+        "defaults": {
+          "STATIC_1": "value_1",
+          "STRING_1": "default value 1"
+        }
+      }
+    ],
     "env": [
       {
         "key": "BUCKET_ENDPOINT_URL",
