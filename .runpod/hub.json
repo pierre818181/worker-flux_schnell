@@ -1,0 +1,40 @@
+{
+  "title": "Worker Flux_schnell",
+  "description": "Worker for Flux_Schnell",
+  "type": "serverless",
+  "category": "image",
+  "iconUrl": "https://huggingface.co/black-forest-labs/FLUX.1-schnell/resolve/main/schnell_grid.jpeg",
+  "config": {
+    "runsOn": "GPU",
+    "containerDiskInGb": 19,
+    "env": [
+      {
+        "key": "BUCKET_ENDPOINT_URL",
+        "input": {
+          "name": "Bucket Endpoint URL (S3)",
+          "type": "string",
+          "description": "(optional) Endpoint URL of the s3 bucket for uploading results",
+          "default": "https://XXXXXXXXXXXXXXX.eu.r2.cloudflarestorage.com"
+        }
+      },
+      {
+        "key": "BUCKET_ACCESS_KEY_ID",
+        "input": {
+          "name": "Bucket Access Key ID",
+          "type": "string",
+          "description": "(optional) Key ID for the s3 bucket",
+          "default": "ff64f0084163ac9174c3847cd539033e"
+        }
+      },
+      {
+        "key": "BUCKET_SECRET_ACCESS_KEY",
+        "input": {
+          "name": "Bucket Secret Access Key",
+          "type": "string",
+          "description": "(optional) Secret Access Key for the s3 bucket",
+          "default": "9e734a9698f223c75aabc77b2c90e4d91067d42a5cbc81beb037dc493106d7e8"
+        }
+      }
+    ]
+  }
+}
