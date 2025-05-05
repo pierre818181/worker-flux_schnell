@@ -3,7 +3,7 @@
     {
       "name": "validation_text_input",
       "input": {
-        "prompt": "Hello World",
+        "prompt": "A serene mountain landscape at sunset with a lake reflecting the sky",
         "width": 1024,
         "height": 1024,
         "num_outputs": 1,
