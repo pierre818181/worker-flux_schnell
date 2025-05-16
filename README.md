@@ -7,7 +7,7 @@
 [![RunPod](https://api.runpod.io/badge/UnSparkAI/worker-flux_schnell)](https://www.runpod.io/console/hub/UnSparkAI/worker-flux_schnell)
 ## **Inputs Guide:**
 > [!IMPORTANT]
-> Input schema below
+> Input schema
 ## Input Schema
 
 The model accepts the following parameters:
