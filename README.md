@@ -17,7 +17,7 @@ The model accepts the following parameters:
 | `prompt` | string | Yes | - | - | Text description of the image you want to generate |
 | `width` | integer | No | 1024 | - | Width of the output image in pixels |
 | `height` | integer | No | 1024 | - | Height of the output image in pixels |
-| `num_outputs` | integer | No | 1 | 1-9 | Number of images to generate in a single request |
+| `num_outputs` | integer | No | 1 | 1-9 | Number of images to in a single request |
 | `num_inference_steps` | integer | No | 50 | 1-199 | Number of denoising steps (more steps = higher quality but slower generation) |
 | `guidance_scale` | float | No | 7.5 | 0-20 | How closely the model follows the prompt (higher values = more faithful to prompt but potentially less creative) |
 | `seed` | integer | No | Random | - | Random seed for reproducible generation. Same seed + same parameters = same image |
