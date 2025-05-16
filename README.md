@@ -8,7 +8,7 @@
 ## **Inputs Guide:**
 > [!IMPORTANT]
 > Input schema below
-## Input Schema Documentation
+## Input Schema
 
 The model accepts the following parameters:
 
